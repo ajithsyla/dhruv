@@ -10,6 +10,8 @@ import { NavContent } from '../nav/nav.component';
 import { CarouselComponent } from '../carousel/carousel.component';
 import { homeComponent } from '../home/home.component';
 import { servicesComponent } from '../services/services.component';
+import { PostService } from './post.service';
+
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import { servicesComponent } from '../services/services.component';
     CarouselComponent,
     homeComponent,
     servicesComponent
-
+    
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,7 @@ import { servicesComponent } from '../services/services.component';
       component: servicesComponent
     },
     ])],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
